@@ -30,5 +30,8 @@ app.post('/', function(req, res){
     items.push(item);
     res.redirect('/');
 });
+app.get("/about", function(req, res){
+    res.render("about");
+});
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
